@@ -33,10 +33,10 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 
 .codesnippet{
-	height:20em;
-	width: auto;
+	height:auto;
+	width: 50em;
 	border-radius:20px;
-	position:center;
+
 }
 
 .logo{
