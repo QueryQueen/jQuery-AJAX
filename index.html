@@ -18,18 +18,28 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
+
 			$('#fullpage').fullpage({
 				sectionsColor: ['#CC8B86', '#B4656F', '#5AB1BB', '#DDD8C4', '#5AB1BB'],
 				 anchors: ['home', 'about-jQuery', 'ajax', 'hands-on', 'links'],
 				menu: '#menu',
 				scrollingSpeed: 1000
 			});
+
+			// This is a test to get an API working
+			// $('.button').click(function(){
+			// 	$.get("http://hipsterjesus.com/api/", function(result){
+			// 		alert("I got this from the server:" + result.text);
+			// 	});
+			// });
 		});
+
+		
 	</script>
 
 </head>
-<body>
 
+<body>
 <!--Dit is het navigatiemenu links boven -->
 <ul id="menu">
 	<li data-menuanchor="home"><a href="#home">Home</a></li>
@@ -54,21 +64,22 @@
 		<div class="slide active">
 			<div class="intro">
 				<h1>JQuery. A Javascript library</h1>
-				<p>Easy to use. Less code. Quick start.</p>
+				<p>Easy to use. Less code. Quick start. Lot of plug-ins</p>
 				<p>Great for DOM manipulation, event handling, AJAX & animation.</p>
 				<p>Presentation content:</p>
 				<div class="button">Quick overview</div><br>
 				<div class="button">DOM manipulation</a></div><br>
 				<div class="button">Event handling</div><br>
-				<div class="button">AJAX</div>
+				<div class="button">Plug-ins</div><br>
+				<div class="button">AJAX &#9660;</div>
 			</div>
 		</div>
 
 		<div class="slide" id="wordcloud">
 			<div class="intro">
 				<!-- This is the wordcloud-->
-				<script src="http://cdn.tagul.com/embed/8b74290qk16m"></script>
-				<a href="http://tagul.com/">Created with Tagul.com</a> 
+				<img src="imgs/wordcloud.png" class="cartoon" alt="jQuery wordcloud"/>
+				<!-- <a href="http://tagul.com/">Created with Tagul.com</a> --> 
 			</div>
 		</div>
 
@@ -94,7 +105,7 @@
 				<p>You can do so by using HTML elements, classes or id's that you used.</p>
 				<p>You can also refer to the current element by using the word this.</p>
 				<img src="imgs/selectors.png" class="codesnippet" alt="jQuery selectors"/>
-				<p>Once you selected and element from the DOm, the fun begins.</p>
+				<p>Once you selected and element from the DOM, the fun begins.</p>
 				<p>Insert elements, remove them, add classes to them, the list is endless!</p>
 				<p>Go to their <a href="http://api.jquery.com/" target="_blank"> API documentation  </a>to find out about all the options.</p>
 				<img src="imgs/functionexample.png" class="codesnippet" alt="Example of function"/>
@@ -108,6 +119,9 @@
 				<p>jQuery is awesome at event handling.</p>
 				<p>Events are being fired by the browser all the time and are great for user interaction.</p>
 				<p>Mouseclicks, using the keyboard and scrolling are examples of events.</p>
+				<img src="imgs/events.png" class="codesnippet" alt="Event handling in jQuery"/>
+				<h3>Examples of event listeners in jQuery</h3>
+				<br>
 				<p>Find a list of events in the <a href="http://api.jquery.com/category/events/" target="_blank"> documentation  </a>to find out about all the options.</p>
 			</div>
 		</div>
@@ -122,6 +136,22 @@
 				<h3>Adding an element with jQuery</h3>
 			</div>
 		</div>
+
+		<div class="slide">
+			<div class="intro">
+				<h1>Plug-ins</h1>
+				<p> You are not the only one coding in jQuery!</p>
+				<p> Why not get a head start and use plug-ins.</p>
+				<p> You can check <a href="http://www.webappers.com/?s=jQuery" target="_blank"> webappers </a> or <a href="https://www.smashingmagazine.com/2012/09/useful-javascript-libraries-jquery-plugins-web-developers/" taget='_blank'> Smashing Magazine</a> to see some cool plugins.</p>
+				<a href="http://alvarotrigo.com/fullPage/" target='_blank'><img src="imgs/fullPage.jpg" class="logo" alt="FullPage, a jQuery plugin"/></a>
+				<h3>Make a nice one-page website like this one!</h3>
+				<a href="http://mds.sh/readable/" target='_blank'><img src="imgs/readablelogo.png" class="logo" alt="Readable, a jQuery plugin"/></a>
+				<h3>Turn your content into eyecandy.</h3>
+				<a href="https://twitter.github.io/typeahead.js/" target='_blank'><img src="imgs/typeaheadlogo.png" class="logo" alt="Typeahead, a jQuery plugin"/></a>
+				<h3>Get autocomplete suggestions.</h3>
+			</div>
+		</div>
+
 	</div> 
 		
 	<div class="section" id="section2">
@@ -146,7 +176,7 @@
 				<div class="button">Lot of user action</div><br>
 				<div class="button">Investigate SEO implications!</div><br>
 				<p>For a static website you better look at other options to enhance performance</p>
-				<p>Think about chaching, local storage, offline storage of data instead</p>
+				<p>Think about caching, local storage, offline storage of data instead</p>
 			</div>
 		</div>
 
@@ -158,6 +188,18 @@
 				<p> You can find the full info on the $.ajax object in the <a href="http://api.jquery.com/jquery.ajax/" target="_blank"> jQuerydocumentation </a></p>
 				<img src="imgs/ajaxexample.png" class="codesnippet" alt="Using AJAX with jQuery"/>
 				<h3>The most important start methods for using AJAX with jQuery</h3>
+			</div>
+		</div>
+
+		<div class="slide">
+			<div class="intro">
+				<h1>API &hearts; AJAX</h1>
+				<p>AJAX is most commonly used to interact with API's.</p>
+				<p>That's an Application Programming Interface.</p>
+				<p>Want to know more? Google is your friend.</p>
+				<br>
+				<img src="imgs/apiajax.png" class="codesnippet" alt="Using AJAX with API's"/>
+				<h3>Pseudocode for using AJAX to interact with an API</h3>
 			</div>
 		</div>
 	</div>

@@ -34,23 +34,21 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 
 .codesnippet{
 	height:auto;
-	width: 50em;
+	width: 55em;
 	border-radius:20px;
-
 }
 
 .logo{
 	width:10em;
 	height: auto;
 	border-radius: 20px;
-	position: center;
 }
 
 .cartoon{
 	width:35em;
 	height: auto;
 	border-radius: 20px;
-	position: center;
+	align:center;
 	
 }
 
